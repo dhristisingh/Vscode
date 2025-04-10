@@ -1,0 +1,142 @@
+.hero-section {
+    width: 100%;
+    background-color: var(--background);
+    color: white
+    
+}
+
+.hero-promotion {
+    width: 100%;
+    display: flex;
+    height: 4rem;
+    font-size: 1.4rem;
+    background-color: var(--background);
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.wrapper {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-promotion::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    content: ' ';
+    background: radial-gradient(circle at 50% 50% , rgba(19, 45, 68, 0.625) , transparent 150%);
+}
+
+.wrapper a {
+    margin: 0 0.2rem;
+    color:rgb(77, 170, 252);
+    cursor: pointer;
+}
+
+.hero-promotion button {
+    background-color: transparent;
+    color: #9ba3b4;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.hero-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-main .hero-text {
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #c3d0e5;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.hero-download {
+    background-color: #0076bf;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    border: none;
+}
+
+.hero-download:hover {
+    background-color: #005ba4;
+}
+
+.hero-promo {
+    background-color: #25292E;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    border: 1px solid gray;
+}
+
+.hero-promo:hover {
+    background-color: #333940;
+}
+
+.hero-links {
+    font-size: 1rem;
+    margin-top: 1rem; 
+}
+
+.hero-links a {
+    color: #4DAAFC;
+}
+
+.terms-conditions {
+    color : #9ba3b4;
+    margin-top: 2rem;
+}
+
+.terms-conditions a {
+    color: #9ba3b4;
+    font-size: bold;
+}
+
+.terms-conditions a:hover {
+    cursor: pointer;
+}
+
+.hero-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.hero-video-container video {
+    margin-top: 2.5rem;
+    width: 908px;
+    height: 450px;
+}
+
+.hero-video-container img {
+    border-radius: 1rem;
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+}

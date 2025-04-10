@@ -1,11 +1,17 @@
 header {
     width: 100%;
     position: fixed;
-    height: 8%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
     font-size: 1.8rem;
     background-color: var(--background) ;
     display: flex;
     align-items: center;
+    user-select: none;
+    z-index: 9999;
+    border-bottom: 1px solid #484646;
 }
 
 nav {
@@ -16,6 +22,7 @@ nav {
 .navbar {
     display: flex;
     width: 80%;
+    max-width: 1980px;
     margin: auto;
     height: inherit;
     align-items: center;
@@ -35,11 +42,13 @@ nav {
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 1rem;
+    cursor: pointer;
 }
 .navbar-left .brand p {
     font-size: 2rem;
     color: #c3d0e5;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .navbar-left .links {
@@ -54,6 +63,10 @@ nav {
     font-size: 1.6rem;
     font-weight: 600;
     padding: 2rem;
+}
+
+.navbar-left li:hover {
+    cursor: pointer;
 }
 
 .navbar-left a {
@@ -75,9 +88,13 @@ nav {
     border: none;
     border-radius: 0.6rem;
     margin-right: 1rem;
+    
 }
+
+
 .navbar-right .light-mode-switch:hover {
     background-color: rgba(255,255,255,0.10);
+    cursor: pointer;
 }
 
 .navbar-right .light-mode {
@@ -94,6 +111,7 @@ nav {
     align-items: center;
     font-size: 1.4rem;
     margin-right: 1rem;
+
 }
 
 .navbar-right .search-icon-span {
@@ -101,6 +119,10 @@ nav {
     transform: rotateY(180deg);
     position: absolute;
     left: 0.8rem;
+}
+
+.navbar-right .search-icon-span:hover {
+    cursor: pointer;
 }
 
 .navbar-right input {
@@ -126,4 +148,5 @@ nav {
 
 .navbar-right .nav-download:hover {
     background-color: #0069b9;
+    cursor: pointer;
 }
