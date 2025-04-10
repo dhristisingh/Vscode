@@ -1,0 +1,129 @@
+header {
+    width: 100%;
+    position: fixed;
+    height: 8%;
+    font-size: 1.8rem;
+    background-color: var(--background) ;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left .brand {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.navbar-left .brand img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+.navbar-left .brand p {
+    font-size: 2rem;
+    color: #c3d0e5;
+    font-weight: 600;
+}
+
+.navbar-left .links {
+    display: flex;
+
+}
+
+.navbar-left ul {
+    list-style: none;
+    display: flex;
+    column-gap: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: #9ba3b4;
+}
+.navbar-left a:hover {
+    text-decoration: none;
+    color : #eee;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-right .light-mode-switch {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.6rem;
+    margin-right: 1rem;
+}
+.navbar-right .light-mode-switch:hover {
+    background-color: rgba(255,255,255,0.10);
+}
+
+.navbar-right .light-mode {
+    color: var(--foreground);
+}
+
+
+
+.navbar-right .search-box {
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--foreground);
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+.navbar-right .search-icon-span {
+    color: var(--foreground);
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 0.8rem;
+}
+
+.navbar-right input {
+    border: none;
+    background-color:var(--background);
+    color: var(--foreground);
+    padding-left: 3rem;
+    height: 3rem;
+}
+.navbar-right input:focus {
+    outline: none;
+}
+
+.navbar-right .nav-download {
+    background-color: #0078d4;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 1.4rem;
+}
+
+.navbar-right .nav-download:hover {
+    background-color: #0069b9;
+}
