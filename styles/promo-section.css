@@ -1,0 +1,136 @@
+.promo-section {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background);
+
+}
+
+.promo-section-top {
+    display: flex;
+    color: white;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    column-gap: 4rem;
+
+}
+
+.promo-section-top .content-box {
+    width: 37rem;
+    height: 38rem;
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 1rem;
+    padding: 1.6rem;
+}
+
+.promo-section-top .content-box .box-title {
+    font-size: 2rem;
+    color: #c3d0e5;
+    margin-bottom: 1rem;
+}
+
+.promo-section-top .content-box .description {
+    font-size: 1.6rem;
+    color: #9FB1D1;
+}
+
+.promo-section-top .content-box img {
+    margin-top: 2rem;
+}
+
+.promo-section-bottom {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.promo-section-bottom .content-box {
+    height: 170px;;
+    width: 1190px;
+    max-width: 1190px;
+    border-radius: 2rem;
+    background-color: #131313;
+    border: 1px solid rgba(255,255,255,0.12);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.promo-section-bottom .content-box::before {
+    position: absolute;
+    content: '';
+    height: 180px;
+    width: 100%;
+
+    z-index: 0;
+    background: radial-gradient(circle at bottom left, rgba(69, 189, 69, 0.7) , transparent 25%) , 
+    radial-gradient(circle at top left , rgb(1, 164, 246 , 0.7), transparent 25%), 
+    radial-gradient(circle at 10% 40% , rgba(255,255,255, 0.6), 
+    transparent 15%), 
+    radial-gradient(circle at 30% 150% , rgba(73, 16, 217, 0.4),
+    transparent 30%),
+    radial-gradient(circle at 100% -5% , rgba(54, 242, 242,0.4) , transparent 15% ),
+    radial-gradient(circle at 100% -10% , rgba(73, 16, 217, 0.7) , transparent 30%);
+
+}
+
+.mask::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(100px);
+    z-index: 4;
+
+}
+
+.promo-section-bottom .content-box {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+}
+
+.promo-section-bottom .left {
+    font-size: 3.5rem;
+    font-weight: 400;;
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 50;
+
+}
+
+.promo-section-bottom .right {
+    z-index: 55;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 2rem;
+}
+
+.promo-section-bottom .right button {
+    background-color: #25292E;
+    color: #c3d0e5;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+}
+.promo-section-bottom .right button:hover {
+    cursor: pointer;
+    background-color: #333940;
+}
+
