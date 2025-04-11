@@ -1,5 +1,5 @@
 .promo-section {
-    height: 100vh;
+
     width: 100%;
     background-color: var(--background);
 
@@ -8,9 +8,9 @@
 .promo-section-top {
     display: flex;
     color: white;
-    width: 80%;
+    width: 85%;
     margin: auto;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 4rem;
 
 }
@@ -22,6 +22,7 @@
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 1rem;
     padding: 1.6rem;
+    overflow: hidden;
 }
 
 .promo-section-top .content-box .box-title {
@@ -40,7 +41,7 @@
 }
 
 .promo-section-bottom {
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -51,8 +52,7 @@
 
 .promo-section-bottom .content-box {
     height: 170px;;
-    width: 1190px;
-    max-width: 1190px;
+    width: 100%;
     border-radius: 2rem;
     background-color: #131313;
     border: 1px solid rgba(255,255,255,0.12);
@@ -82,6 +82,7 @@
 .mask::before {
     content: '';
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     backdrop-filter: blur(100px);

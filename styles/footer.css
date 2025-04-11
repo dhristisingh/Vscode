@@ -1,0 +1,46 @@
+footer {
+    background-color: #0d1117;
+    width: 100%;
+    padding: 8rem 0rem;
+}
+
+.app-links {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 2rem;
+
+}
+
+.app-links a {
+    color: #9FB1D1
+}
+
+.app-links .app-links-left {
+    display: flex;
+    column-gap: 2.5rem;
+    text-decoration: none;
+}
+
+.app-links .app-links-left a {
+    text-decoration: none;
+    color: #9FB1D1
+}
+
+.footer-links {
+    width: 85%;
+
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #9FB1D1;
+}
+
+
