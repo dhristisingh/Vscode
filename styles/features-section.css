@@ -199,6 +199,60 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+    .features {
+        width: 78%;
+    }
+
+    .feature-content {
+        margin: 0;
+    }
+
+    .feature-left {
+        width: 77% !important;
+    }
+
+    .feature-right .box .box-left {
+        margin: 0;
+        width: 100%;
+        padding: 2rem 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature-right .box .box-left img {
+        width: 4rem;
+        height: 4rem;
+
+    }
+    .feature-right .box .box-right {
+        display: none;
+
+    }
+    .feature-right .platforms {
+        gap: 0;
+        width: 100%;
+    }
+    .feature-right .platform {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0;
+    }
+
+    .feature-right .platform .platform-left {
+        margin: 0;
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+
+    .feature-right .platform .platform-left img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+
 
 
 

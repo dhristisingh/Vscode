@@ -51,7 +51,7 @@
 }
 
 .promo-section-bottom .content-box {
-    height: 170px;;
+    height: 170px;
     width: 100%;
     border-radius: 2rem;
     background-color: #131313;
@@ -133,5 +133,46 @@
 .promo-section-bottom .right button:hover {
     cursor: pointer;
     background-color: #333940;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .promo-section-top {
+        width: 75%;
+
+    }
+    
+    .promo-section-bottom {
+        width: 75%;
+
+    }
+
+
+    .promo-section-bottom .content-box {
+        justify-content: space-between;
+        border-radius: 0.7rem;
+        height: 20rem;
+    }
+
+    .promo-section-bottom .content-box::before {
+        height: 100%;
+    }
+
+    .promo-section-bottom .left {
+        font-size: 3rem;
+        width: 25rem;
+        margin-left:4rem;
+    }
+
+    .promo-section-bottom .right {
+        width: 37rem;
+        margin-right: 2rem;
+    }
+
+    .promo-section-bottom .right button {
+        width: 7.5rem;
+        font-size: 1.52rem;
+        border-radius: 0.5rem;
+    }
 }
 
