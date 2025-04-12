@@ -101,8 +101,6 @@ nav {
     color: var(--foreground);
 }
 
-
-
 .navbar-right .search-box {
     border: 1px solid rgba(255,255,255,0.15);
     color: var(--foreground);
@@ -149,4 +147,38 @@ nav {
 .navbar-right .nav-download:hover {
     background-color: #0069b9;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        height: 11rem;
+        margin-top: 0;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .navbar {
+        width: 75%;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+    .navbar-right {
+        align-self: flex-end;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-right .search-box {
+        width: 3rem;
+    }
+    .navbar-right input {
+        display: none;
+    }
 }
