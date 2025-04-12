@@ -17,7 +17,6 @@
 
 .promo-section-top .content-box {
     width: 37rem;
-    height: 38rem;
     background-color: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 1rem;
@@ -180,5 +179,44 @@
 {
     .promo-section-top, .promo-section-bottom {
         width: 96%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .promo-section-top {
+        flex-direction: column !important;
+    }
+    .content-box {
+        width: 100%!important;
+        margin-bottom: 2rem;
+    }
+
+    .promo-section-bottom .content-box {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 18rem;
+        color: #e6eefA;
+ 
+    }
+    .promo-section-bottom .content-box .left,
+    .promo-section-bottom .content-box .right {
+        width: 100%;
+
+    }
+
+    .promo-section-bottom .content-box .left {
+        margin: 0;
+        justify-content: start;
+        height: fit-content;
+        margin-left: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .promo-section-bottom .content-box .right {
+        height: fit-content;
+        margin-left: 2rem;
+        font-size: 1.6rem;
     }
 }

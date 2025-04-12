@@ -95,3 +95,9 @@
         width: 96%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .features-summary-bottom .features-cards {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
