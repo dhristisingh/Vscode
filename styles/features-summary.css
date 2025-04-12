@@ -72,3 +72,19 @@
     color: #9FB1D1;
     font-size: 1.4rem;
 }
+
+
+@media screen and (max-width: 1200px) {
+
+    .features-summary-top{
+        width: 75%;
+    }
+
+    .features-summary-bottom {
+        width: 75%;
+    }
+
+    .features-cards {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
