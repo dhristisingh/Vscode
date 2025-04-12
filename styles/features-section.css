@@ -5,7 +5,6 @@
     padding-top: 8rem;
 }
 
-
 .features {
     width: 88%;
     display: flex;
@@ -21,6 +20,7 @@
     display: flex;
     margin-bottom: 8rem;
     height: 100%;
+    justify-content: space-between;
 }
 
 
@@ -34,7 +34,7 @@
 }
 
 .feature-content {
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
@@ -196,8 +196,15 @@
 
 
 @media screen and (max-width: 1200px) {
+
+    .features-section {
+        width: 100%;
+    }
+
+    
     .features {
-        width: 78%;
+        width: 96%;
+        margin: auto !important;
     }
 
     .feature-content {
@@ -205,7 +212,7 @@
     }
 
     .feature-left {
-        width: 77% !important;
+        width: 80% !important;
     }
 
     .feature-right {
@@ -255,6 +262,24 @@
     }
 
 
+}
+
+@media screen and (max-width: 990px){
+    .features {
+        width: 96%;
+        margin: 0;
+
+    }
+
+    .feature-left {
+        width: 70% !important;
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+
+    .feature-right{
+        align-items: flex-end;
+    }
 }
 
 

@@ -55,4 +55,11 @@ footer {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .app-links,
+    .footer-links {
+        width: 96%;
+    }
+}
+
 

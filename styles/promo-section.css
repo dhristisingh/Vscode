@@ -176,3 +176,9 @@
     }
 }
 
+@media screen and (max-width: 990px) 
+{
+    .promo-section-top, .promo-section-bottom {
+        width: 96%;
+    }
+}

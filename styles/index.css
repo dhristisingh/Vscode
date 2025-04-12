@@ -60,3 +60,9 @@
   #root, #__next {
     isolation: isolate;
   }
+
+
+
+  section {
+    border: none !important;
+  }

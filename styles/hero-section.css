@@ -67,6 +67,7 @@ main {
     font-weight: 700;
     text-align: center;
     color: #c3d0e5;
+    width: 65rem;
 }
 
 .buttons {
@@ -198,4 +199,36 @@ main {
     /* .hero-video-container img {
         height: 71%;
     } */
+}
+
+@media screen and (max-width: 990px){
+
+    .hero-section {
+        margin-top: 5.8rem;
+        border: none;
+    }
+    .hero-promotion {
+        display: flex;
+    }
+
+    .hero-promotion .close {
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-text {
+        font-size: 4rem !important;
+        width: 100% !important;
+    }
+
+    .hero-main {
+        margin-top: 4rem;
+    }
+
+    .hero-video-container {
+        width: 96%;
+        height: 58rem;
+    }
+
+
 }

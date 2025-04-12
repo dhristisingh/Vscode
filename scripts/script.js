@@ -1,6 +1,7 @@
 const playPauseElement = document.querySelector('.play-pause');
 const videoElement = document.querySelector('.video-play');
-
+const mobileMenuElement = document.querySelector('.mobile-only-options');
+const mobileMenuOptions = document.querySelector('.options-bar');
 playPauseElement.addEventListener("click",() => {
     if(playPauseElement.innerText === "Pause"){
         playPauseElement.innerText = "Play";
@@ -18,3 +19,14 @@ playPauseElement.addEventListener("click",() => {
 videoElement.addEventListener('ended', ()=> {
     playPauseElement.innerText = "Replay";
 })
+
+let isActive = false
+mobileMenuElement.addEventListener("click", ()=> {
+   if(isActive == false){
+    mobileMenuOptions.classList.add('open');
+    isActive = true;
+   } else {
+    mobileMenuOptions.classList.remove('open');
+    isActive = false;
+   }
+});

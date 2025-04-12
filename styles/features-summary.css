@@ -88,3 +88,10 @@
         grid-template-columns: repeat(2 , 1fr);
     }
 }
+
+@media screen and (max-width: 990px){
+    .features-summary-top,
+    .features-summary-bottom {
+        width: 96%;
+    }
+}

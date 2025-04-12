@@ -82,6 +82,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .navbar-right .light-mode-switch {
     background-color: transparent;
@@ -150,6 +151,88 @@ nav {
 }
 
 
+.options-bar {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 0;
+    background-color: #0d1117;
+    z-index: 555;
+    right: -2rem;
+    top: 5rem;
+    overflow: hidden;
+
+    transition: height 0.3s ease-in-out;
+}
+
+
+
+
+.options-bar ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0.2rem;
+
+}
+
+.options-bar a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #9ba3b4;
+    font-weight: 500;
+}
+
+.options-bar a:hover {
+    color: #c3d0e5;
+}
+
+.options-bar .mobile-options-bottom {
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+
+}
+
+.mobile-options-bottom .download {
+    background-color: #0078d4;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 1.4rem;
+}
+
+.mobile-options-bottom .mobile-light-mode-switch {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.6rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    padding-bottom: 0.6rem;
+}
+
+.mobile-options-bottom .search-icon {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    background: transparent;
+    color: #9ba3b4;
+    border: none;
+    justify-content: center;
+}
+
+.options-bar.open {
+    height: 32rem;
+    border-bottom: 2px solid gray;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
 
@@ -183,4 +266,69 @@ nav {
     }
 }
 
+@media screen and (max-width: 990px) {
 
+    header {
+        height: 6rem;
+    }
+
+    nav {
+        height: 100%;
+    }
+    .navbar {
+        width: 96%;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .navbar-left {
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-left .links {
+        display: none;
+    }
+
+    .navbar-right {
+        width: 10rem;
+        margin: 0;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+    .navbar-right .mobile-only-options {
+        font-size: 2.8rem;
+        color: #90a7b7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        border-radius: 0.5rem;
+        background-color: rgba(255,255,255,0.04);
+        transition: height 1s ease-in;
+    }
+
+    
+    .light-mode-switch {
+        display: none !important;
+    }
+
+
+    .search-box {
+        display: none !important;
+    }
+
+    .nav-download {
+        display: none;
+    }
+
+    .options-bar {
+        display: flex;
+        border: none;
+    }
+
+}
