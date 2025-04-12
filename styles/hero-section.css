@@ -232,3 +232,9 @@ main {
 
 
 }
+
+@media screen and (max-width: 768px){
+    .hero-video-container {
+        height: 42rem;
+    }
+}
