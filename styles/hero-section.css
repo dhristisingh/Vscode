@@ -39,6 +39,7 @@ main {
     z-index: 0;
     content: ' ';
     background: radial-gradient(circle at 50% 50% , rgba(19, 45, 68, 0.625) , transparent 150%);
+    pointer-events: none;
 }
 
 .wrapper a {

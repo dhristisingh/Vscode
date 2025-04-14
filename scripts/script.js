@@ -30,3 +30,11 @@ mobileMenuElement.addEventListener("click", ()=> {
     isActive = false;
    }
 });
+
+
+const buttonEl = document.querySelector('.close');
+const promoEl = document.querySelector('.hero-promotion');
+
+buttonEl.addEventListener("click" , (e)=> {
+    buttonEl.parentNode.parentNode.removeChild(promoEl);
+})
